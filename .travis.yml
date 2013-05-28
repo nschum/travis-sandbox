@@ -2,15 +2,15 @@ language: objective-c
 
 env:
   matrix:
-    - SCHEME=FontAwesomeIconFactoryDemo
-    - SCHEME=FontAwesomeIconFactoryDemoOSX
+    - SCHEME=FontAwesomeIconFactoryDemo SDK=iphonesimulator
+    - SCHEME=FontAwesomeIconFactoryDemoOSX SDK=macosx
 
 before_install:
   - brew update
   - brew install xctool
 
 script:
-  - xctool -workspace *.xcworkspace -scheme $SCHEME -configuration Release test
+  - xctool -workspace *.xcworkspace -scheme $SCHEME -sdk $SDK test ONLY_ACTIVE_ARCH=NO
 
 notifications:
   email: false
