@@ -24,6 +24,16 @@
 		24D1D0B6175E7485001DB168 /* FontAwesomeIconFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D1D0B5175E7485001DB168 /* FontAwesomeIconFactoryTests.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		24D1D0BB175E777F001DB168 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24CF4E6D16EA11EE00F16647 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24CF4E7416EA11EE00F16647;
+			remoteInfo = FontAwesomeIconFactoryDemoOSX;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1AA10154DEA4A1A74CE135F2 /* NIKFontAwesomePathFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NIKFontAwesomePathFactory.m; path = ../../NIKFontAwesomePathFactory.m; sourceTree = "<group>"; };
 		1AA1018F973D64F2AFDC2CF4 /* NIKFontAwesomeIconFactory+OSX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NIKFontAwesomeIconFactory+OSX.h"; path = "../../NIKFontAwesomeIconFactory+OSX.h"; sourceTree = "<group>"; };
@@ -210,6 +220,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				24D1D0BC175E777F001DB168 /* PBXTargetDependency */,
 			);
 			name = FontAwesomeIconFactoryTestsOSX;
 			productName = FontAwesomeIconFactoryTestsOSX;
@@ -305,6 +316,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24D1D0BC175E777F001DB168 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24CF4E7416EA11EE00F16647 /* FontAwesomeIconFactoryDemoOSX */;
+			targetProxy = 24D1D0BB175E777F001DB168 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		24CF4E8116EA11EE00F16647 /* InfoPlist.strings */ = {
@@ -442,6 +461,7 @@
 		24D1D0B8175E7485001DB168 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FontAwesomeIconFactoryDemoOSX.app/Contents/MacOS/FontAwesomeIconFactoryDemoOSX";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -449,6 +469,7 @@
 				INFOPLIST_FILE = "FontAwesomeIconFactoryTestsOSX/FontAwesomeIconFactoryTestsOSX-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -456,6 +477,7 @@
 		24D1D0B9175E7485001DB168 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FontAwesomeIconFactoryDemoOSX.app/Contents/MacOS/FontAwesomeIconFactoryDemoOSX";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -463,6 +485,7 @@
 				INFOPLIST_FILE = "FontAwesomeIconFactoryTestsOSX/FontAwesomeIconFactoryTestsOSX-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
