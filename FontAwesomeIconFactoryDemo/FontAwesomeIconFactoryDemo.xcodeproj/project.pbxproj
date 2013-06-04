@@ -81,7 +81,7 @@
 		24DE5CB61752B0B00026275F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		24DE5CB81752B0B00026275F /* FontAwesomeIconFactoryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FontAwesomeIconFactoryTests.h; path = ../../FontAwesomeIconFactoryTests/FontAwesomeIconFactoryTests.h; sourceTree = "<group>"; };
 		24DE5CB91752B0B00026275F /* FontAwesomeIconFactoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FontAwesomeIconFactoryTests.m; path = ../../FontAwesomeIconFactoryTests/FontAwesomeIconFactoryTests.m; sourceTree = "<group>"; };
-		24DE5CBB1752B0B00026275F /* FontAwesomeIconFactoryTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "FontAwesomeIconFactoryTests-Prefix.pch"; path = "../FontAwesomeIconFactoryTests/FontAwesomeIconFactoryTests-Prefix.pch"; sourceTree = "<group>"; };
+		24DE5CBB1752B0B00026275F /* FontAwesomeIconFactoryTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FontAwesomeIconFactoryTests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -484,7 +484,7 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "../FontAwesomeIconFactoryTests/FontAwesomeIconFactoryTests-Prefix.pch";
+				GCC_PREFIX_HEADER = "FontAwesomeIconFactoryTests/FontAwesomeIconFactoryTests-Prefix.pch";
 				INFOPLIST_FILE = "FontAwesomeIconFactoryTests/FontAwesomeIconFactoryTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -502,7 +502,7 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "../FontAwesomeIconFactoryTests/FontAwesomeIconFactoryTests-Prefix.pch";
+				GCC_PREFIX_HEADER = "FontAwesomeIconFactoryTests/FontAwesomeIconFactoryTests-Prefix.pch";
 				INFOPLIST_FILE = "FontAwesomeIconFactoryTests/FontAwesomeIconFactoryTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -539,6 +539,7 @@
 				24DE5CBD1752B0B00026275F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
