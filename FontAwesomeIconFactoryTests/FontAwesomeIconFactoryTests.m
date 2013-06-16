@@ -14,6 +14,10 @@ static const float EPSILON = 0.0001;
     _factory = [NIKFontAwesomeIconFactory new];
 }
 
+- (void)testPaddedShouldBeDefault {
+    assertThatBool(_factory.padded, equalToBool(YES));
+}
+
 - (void)testImagesShouldBeCreated {
     NIKImage *image = [_factory createImageForIcon:NIKFontAwesomeIconGlass];
     assertThat(@(image.size.width), greaterThan(@0.0));
