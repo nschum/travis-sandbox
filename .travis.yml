@@ -6,7 +6,7 @@ before_install:
 
 env:
   matrix:
-    - SCHEME=FontAwesomeIconFactoryDemo SDK=iphonesimulator
+    - SCHEME=FontAwesomeIconFactoryDemo SDK=iphonesimulator7.0
     - SCHEME=FontAwesomeIconFactoryDemoOSX SDK=macosx
 
 script:
